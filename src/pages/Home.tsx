@@ -48,7 +48,7 @@ export const Home = () => {
 
   return (
     <>
-      <div className="flex flex-col content-around items-center w-full mt-5">
+      <div className="flex flex-col content-around items-center w-full">
         <div className="text-white font-bold text-5xl pt-28 border-cyan-">Your Tasks</div>
         <Input inputClassName="w-1/2 mt-10 h-16 text-3xl p-3 text-gray-500 rounded-lg border-1 focus:outline-none focus-visible:border-cyan-400 focus-visible:border-4"
           placeholder="Write a task name and press enter" type="text" _default={false} labelClassName="mt-5"
