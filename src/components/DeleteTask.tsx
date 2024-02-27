@@ -1,4 +1,4 @@
-import { Box, Button, Modal } from '@mui/material'
+import { Box, Modal } from '@mui/material'
 import { Task } from '../Task';
 
 interface DeleteTaskProps {
