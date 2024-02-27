@@ -1,7 +1,6 @@
 import { Switch } from "@mui/material";
 import { Task } from "../Task"
 import DeleteIcon from '@mui/icons-material/Delete';
-import EditIcon from '@mui/icons-material/Edit';
 import { DeleteTask } from "./DeleteTask";
 import { useEffect, useState } from "react";
 import { EditTask } from "./EditTask";
@@ -33,7 +32,7 @@ export const SingleTask: React.FC<SingleTaskProps> = ({ singleTask, removeTask, 
 
   return (
     <>
-      <div className="flex hover:bg-gray-300" onClick={(e) => setOpenEdit(true)}>
+      <div className="flex hover:bg-gray-300" onClick={() => setOpenEdit(true)}>
         <span className={`${!task?.status ? 'bg-gray-400' : bgPriority} pl-3`} />
         <div className={`flex flex-row items-center justify-between w-full h-full py-5 pe-5`}>
           <span className="text-gray-600 text-2xl ml-3">{task?.name}</span>
